@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeReady: boolean = true;
-
+  // Carga el splash screen inicial
   ngOnInit(): void {
     setTimeout(() => {
       this.homeReady = false;
