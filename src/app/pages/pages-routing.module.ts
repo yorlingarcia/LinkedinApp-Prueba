@@ -4,12 +4,12 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'feed',
     component: HomeComponent,
   },
   {
     path: '**',
-    redirectTo: 'home',
+    redirectTo: 'feed',
   },
 ];
 
