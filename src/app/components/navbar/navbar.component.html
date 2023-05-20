@@ -53,7 +53,7 @@
         <span class="visually-hidden">New alerts</span>
       </span>
     </div>
-    <span>Inicio</span>
+    <span>{{ "page.home.navBar.inicio" | translate }}</span>
   </div>
   <!-- Boton Mi red -->
   <div
@@ -75,7 +75,7 @@
         ></path>
       </svg>
     </div>
-    <span>Mi red</span>
+    <span>{{ "page.home.navBar.miRed" | translate }}</span>
   </div>
   <!-- Boton Empleos -->
   <div
@@ -97,7 +97,7 @@
         ></path>
       </svg>
     </div>
-    <span>Empleos</span>
+    <span>{{ "page.home.navBar.empleos" | translate }}</span>
   </div>
   <!-- Boton Mensajes -->
 
@@ -126,7 +126,7 @@
         <span class="visually-hidden">unread messages</span>
       </span>
     </div>
-    <span>Mensajes</span>
+    <span>{{ "page.home.navBar.mensajes" | translate }}</span>
   </div>
   <!-- Boton Notificaciones -->
   <div
@@ -154,7 +154,7 @@
         <span class="visually-hidden">unread messages</span>
       </span>
     </div>
-    <span>Notificaciones</span>
+    <span>{{ "page.home.navBar.notificaciones" | translate }}</span>
   </div>
   <!-- Boton configuraciones de perfil -->
   <div
@@ -176,7 +176,7 @@
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      Yo
+      {{ "page.home.navBar.yo" | translate }}
     </a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -212,7 +212,7 @@
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      Para negocios
+      {{ "page.home.navBar.paraNegocios" | translate }}
     </a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -221,9 +221,12 @@
       <li><a class="dropdown-item" href="#">Something else here</a></li>
     </ul>
   </div>
+  <!-- Enlace Probar Premium -->
   <div
     class="col-2 d-flex flex-column align-items-center justify-content-center"
   >
-    <a href="#" style="color: darkgoldenrod">Probar premium gratis</a>
+    <a href="#" style="color: darkgoldenrod">{{
+      "page.home.navBar.probarPremium" | translate
+    }}</a>
   </div>
 </div>

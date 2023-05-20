@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Translate
+
+Para corregir el problema de internacionalizacion se debe buscar el archivo con ruta "node_modules\@ngx-translate\core\dist\lib\translate.directive.d.ts" y modificar el static dir de la forma:
+
+static ɵdir: i0.ɵɵDirectiveDeclaration<TranslateDirective, "[translate],[ngx-translate]", never, {}, never, never, never>;

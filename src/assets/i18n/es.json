@@ -1,4 +1,10 @@
 {
-  "page.home.nvaBar.inicio": "Inicio",
-  "page.home.nvaBar.miRed": "Mi Red"
+  "page.home.navBar.inicio": "Inicio",
+  "page.home.navBar.miRed": "Mi Red",
+  "page.home.navBar.empleos": "Empleos",
+  "page.home.navBar.mensajes": "Mensajes",
+  "page.home.navBar.notificaciones": "Notificaciones",
+  "page.home.navBar.yo": "Yo",
+  "page.home.navBar.paraNegocios": "Para negocios",
+  "page.home.navBar.probarPremium": "Probar premium gratis"
 }
