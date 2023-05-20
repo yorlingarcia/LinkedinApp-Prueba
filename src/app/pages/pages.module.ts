@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 
-import { HomeComponent } from './home/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { AngularMaterialModule } from '../AngularMaterial/angular-material.module';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 
