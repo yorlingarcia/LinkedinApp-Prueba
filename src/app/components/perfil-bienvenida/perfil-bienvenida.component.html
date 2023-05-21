@@ -1,1 +1,102 @@
-<p>perfil-bienvenida works!</p>
+<div>
+  <!-- Imagen del perfil y de portada -->
+  <div class="position-relative" style="height: 7.25rem">
+    <svg
+      class="rounded-top"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 552 138"
+      id="person-default"
+      data-supported-dps="2048x512"
+    >
+      <path fill="none" d="M0 0h552v138H0z" />
+      <path fill="#d9e5e7" d="M0 0h552v138H0z" />
+      <path fill="#bfd3d6" d="M380 0h172v138H380z" />
+      <path
+        d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z"
+        fill="#a0b4b7"
+      />
+    </svg>
+    <img
+      width="72"
+      src="./assets/img/perfil.jpeg"
+      height="72"
+      alt="Imagen de perfil"
+      id="ember16"
+      class="global-nav__me-photo ember-view position-absolute"
+      style="
+        border-radius: 50%;
+        border: solid white;
+        bottom: -1.5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    />
+  </div>
+  <!-- Mensaje de Bienvenida y aniadir foto -->
+  <div class="pb-3">
+    <!-- Mensaje de bienvenida -->
+    <div>
+      <p>{{ "page.home.perfilBienvenida.bienvenida" | translate }}</p>
+    </div>
+    <!-- aniadir foto -->
+    <div>
+      <a href="#">{{ "page.home.perfilBienvenida.foto" | translate }}</a>
+    </div>
+  </div>
+  <!-- seccion de contactos -->
+  <div class="border-top py-2">
+    <div class="d-flex flex-row justify-content-between px-3">
+      <div class="text-start">
+        <p class="m-0">
+          {{ "page.home.perfilBienvenida.contactos" | translate }}
+        </p>
+        <p class="m-0">
+          {{ "page.home.perfilBienvenida.ampliaTuRed" | translate }}
+        </p>
+      </div>
+      <div class="text-primary">12</div>
+    </div>
+  </div>
+  <!-- seccion de informacion -->
+  <div class="border-top px-3 py-2">
+    <p class="text-start m-0">
+      {{ "page.home.perfilBienvenida.accedeInfo" | translate }}
+    </p>
+    <div class="text-start">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        data-supported-dps="24x24"
+        class="mercado-match"
+        width="24"
+        height="24"
+        focusable="false"
+      >
+        <path
+          d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+          fill="#f8c77e"
+        ></path>
+        <path
+          d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+          fill="#e7a33e"
+        ></path>
+      </svg>
+
+      <span>{{ "page.home.navBar.probarPremium" | translate }}</span>
+    </div>
+  </div>
+  <!-- seccion marcapaginas -->
+  <div class="border-top py-2 px-3 text-start">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      id="bookmark-fill-small"
+      data-supported-dps="16x16"
+      fill="currentColor"
+      style="width: 1rem"
+    >
+      <path d="M13 4a3 3 0 00-3-3H3v14l5-4.5 5 4.5z"></path>
+    </svg>
+    <span>{{ "page.home.perfilBienvenida.marcapaginas" | translate }}</span>
+  </div>
+</div>

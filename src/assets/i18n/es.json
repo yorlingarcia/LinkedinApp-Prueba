@@ -6,5 +6,11 @@
   "page.home.navBar.notificaciones": "Notificaciones",
   "page.home.navBar.yo": "Yo",
   "page.home.navBar.paraNegocios": "Para negocios",
-  "page.home.navBar.probarPremium": "Probar premium gratis"
+  "page.home.navBar.probarPremium": "Probar premium gratis",
+  "page.home.perfilBienvenida.bienvenida": "¡Te damos la bienvenida, Nombre!",
+  "page.home.perfilBienvenida.foto": "Añade una foto",
+  "page.home.perfilBienvenida.contactos": "Contactos",
+  "page.home.perfilBienvenida.ampliaTuRed": "Amplía tu red",
+  "page.home.perfilBienvenida.accedeInfo": "Accede a información y herramientas exclusivas",
+  "page.home.perfilBienvenida.marcapaginas": "Marcapáginas"
 }
