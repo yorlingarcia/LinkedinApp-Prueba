@@ -1,0 +1,24 @@
+.hoverAction {
+  text-decoration: none;
+  color: rgb(21, 25, 29);
+}
+
+.hoverAction:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(13, 110, 253);
+  color: rgb(13, 110, 253);
+}
+
+.hoverButtonCard:hover {
+  border-radius: 50%;
+  background-color: rgb(219, 219, 219);
+}
+
+.hoverInteraction {
+  height: 3rem;
+}
+
+.hoverInteraction:hover {
+  background-color: rgb(221, 221, 221);
+  border-radius: 0.5rem;
+}
