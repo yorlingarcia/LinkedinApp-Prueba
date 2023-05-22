@@ -12,5 +12,8 @@
   "page.home.perfilBienvenida.contactos": "Contactos",
   "page.home.perfilBienvenida.ampliaTuRed": "Amplía tu red",
   "page.home.perfilBienvenida.accedeInfo": "Accede a información y herramientas exclusivas",
-  "page.home.perfilBienvenida.marcapaginas": "Marcapáginas"
+  "page.home.perfilBienvenida.marcapaginas": "Marcapáginas",
+  "page.home.aniadirFeed.aniadirfeedIcon": "Añadir tu feed",
+  "page.home.aniadirFeed.seguir": "Seguir",
+  "page.home.aniadirFeed.verRecomendaciones": "Ver todas las recomendaciones"
 }
