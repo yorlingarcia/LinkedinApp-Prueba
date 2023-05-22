@@ -15,5 +15,15 @@
   "page.home.perfilBienvenida.marcapaginas": "Marcapáginas",
   "page.home.aniadirFeed.aniadirfeedIcon": "Añadir tu feed",
   "page.home.aniadirFeed.seguir": "Seguir",
-  "page.home.aniadirFeed.verRecomendaciones": "Ver todas las recomendaciones"
+  "page.home.aniadirFeed.verRecomendaciones": "Ver todas las recomendaciones",
+  "page.home.infoApp.acercaDe": "Acerca de",
+  "page.home.infoApp.accesibilidad": "Accesibilidad",
+  "page.home.infoApp.centroAyuda": "Centro de ayuda",
+  "page.home.infoApp.privacidadCondiciones": "Privacidad y condiciones",
+  "page.home.infoApp.opcionesPublicidad": "Opciones de publicidad",
+  "page.home.infoApp.publicidad": "Publicidad",
+  "page.home.infoApp.serviciosEmpresariales": "Servicios empresariales",
+  "page.home.infoApp.descargar": "Descargar la aplicación de LinkedIn",
+  "page.home.infoApp.mas": "Más",
+  "page.home.infoApp.linkedin": "LinkedIn Corporation © 2023"
 }
