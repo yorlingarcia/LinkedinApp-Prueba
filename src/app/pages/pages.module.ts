@@ -14,6 +14,7 @@ import { CardPublicacionComponent } from '../components/card-publicacion/card-pu
 import { InfoAppComponent } from '../components/info-app/info-app.component';
 import { PerfilBienvenidaComponent } from '../components/perfil-bienvenida/perfil-bienvenida.component';
 import { CrearPublicacionComponent } from '../components/crear-publicacion/crear-publicacion.component';
+import { ModalPublicarComponent } from '../components/modal-publicar/modal-publicar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CrearPublicacionComponent } from '../components/crear-publicacion/crear
     InfoAppComponent,
     CardPublicacionComponent,
     CrearPublicacionComponent,
+    ModalPublicarComponent,
   ],
   imports: [
     CommonModule,
