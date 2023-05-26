@@ -25,5 +25,8 @@
   "page.home.infoApp.serviciosEmpresariales": "Servicios empresariales",
   "page.home.infoApp.descargar": "Descargar la aplicación de LinkedIn",
   "page.home.infoApp.mas": "Más",
-  "page.home.infoApp.linkedin": "LinkedIn Corporation © 2023"
+  "page.home.infoApp.linkedin": "LinkedIn Corporation © 2023",
+  "page.home.modalPublicacion.crearPublicacion": "Crear Publicación",
+  "page.home.modalPublicacion.cualquiera": "Cualquiera",
+  "page.home.modalPublicacion.comentarioPublicacion": "¿Sobre qué quieres hablar?"
 }

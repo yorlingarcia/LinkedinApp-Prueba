@@ -1,6 +1,5 @@
 .modal_container {
   position: fixed;
-  overflow: hidden;
   z-index: 9;
 }
 
@@ -10,13 +9,38 @@
   background-color: rgba(52, 58, 64, 0.8);
 }
 .modal_seccion {
-  width: 10rem;
-  height: 10rem;
+  width: 34.5rem;
+  height: 100vh;
+  max-height: 24.5rem;
   background-color: white;
   border-radius: 1rem;
   position: absolute;
   z-index: 10;
   left: 50%;
-  top: 10%;
+  top: 0%;
   transform: translateX(-50%);
+}
+
+.hoverAction {
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  &:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hoverActionComplementaria {
+  background-color: transparent;
+  border: none;
+  width: 6.5rem;
+  height: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  &:hover {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
