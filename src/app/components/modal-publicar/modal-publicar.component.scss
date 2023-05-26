@@ -1,6 +1,7 @@
 .modal_container {
   position: fixed;
   overflow: hidden;
+  z-index: 9;
 }
 
 .modal_body {
