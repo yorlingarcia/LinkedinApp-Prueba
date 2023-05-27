@@ -15,6 +15,8 @@ import { InfoAppComponent } from '../components/info-app/info-app.component';
 import { PerfilBienvenidaComponent } from '../components/perfil-bienvenida/perfil-bienvenida.component';
 import { CrearPublicacionComponent } from '../components/crear-publicacion/crear-publicacion.component';
 import { ModalPublicarComponent } from '../components/modal-publicar/modal-publicar.component';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ModalPublicarComponent } from '../components/modal-publicar/modal-publi
     PagesRoutingModule,
     AngularMaterialModule,
     TranslateModule,
+    PickerModule,
+    FormsModule,
   ],
 })
 export class PagesModule {}

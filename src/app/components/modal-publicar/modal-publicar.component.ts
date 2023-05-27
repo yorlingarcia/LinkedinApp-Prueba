@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+
 import { ModalToggleService } from 'src/app/services/modal-toggle.service';
 
 @Component({
