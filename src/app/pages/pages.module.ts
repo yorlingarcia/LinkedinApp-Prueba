@@ -15,7 +15,7 @@ import { InfoAppComponent } from '../components/info-app/info-app.component';
 import { PerfilBienvenidaComponent } from '../components/perfil-bienvenida/perfil-bienvenida.component';
 import { CrearPublicacionComponent } from '../components/crear-publicacion/crear-publicacion.component';
 import { ModalPublicarComponent } from '../components/modal-publicar/modal-publicar.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     AngularMaterialModule,
     TranslateModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class PagesModule {}
