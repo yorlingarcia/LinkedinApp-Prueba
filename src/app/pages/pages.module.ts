@@ -16,6 +16,7 @@ import { PerfilBienvenidaComponent } from '../components/perfil-bienvenida/perfi
 import { CrearPublicacionComponent } from '../components/crear-publicacion/crear-publicacion.component';
 import { ModalPublicarComponent } from '../components/modal-publicar/modal-publicar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LineaDivisoraComponent } from '../components/linea-divisora/linea-divisora.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CardPublicacionComponent,
     CrearPublicacionComponent,
     ModalPublicarComponent,
+    LineaDivisoraComponent,
   ],
   imports: [
     CommonModule,
