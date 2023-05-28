@@ -35,7 +35,7 @@ export class ModalPublicarComponent {
     );
     this.publicacionService.guardarPublicacion({
       name: 'Yorlin Garcia',
-      descripcion: this.miFormulario.value,
+      descripcion: this.miFormulario.value.descripcion,
       date: this.dateNow,
     });
   }
