@@ -24,7 +24,7 @@
         <div class="text-start">{{ "Seguidores" }}</div>
         <!-- Hora de publicacion -->
         <div class="text-start">
-          {{ obeterTiempo(publicacion.date) }} •
+          {{ publicacion.date }} •
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,11 +85,11 @@
     </div>
   </div>
   <!-- Descripcion -->
-  <div>
+  <div class="text-start mx-3">
     {{ publicacion.descripcion }}
   </div>
   <!-- Imagen -->
-  <div>
+  <div *ngIf="publicacion.img">
     <img src="" alt="" />
   </div>
   <!-- Linea divisora -->

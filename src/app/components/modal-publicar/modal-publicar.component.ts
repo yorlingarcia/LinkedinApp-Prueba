@@ -27,16 +27,11 @@ export class ModalPublicarComponent {
   }
 
   guardar() {
-    console.log(
-      'fecha de guardado: ',
-      this.dateNow,
-      'Entrada: ',
-      this.miFormulario.value
-    );
     this.publicacionService.guardarPublicacion({
       name: 'Yorlin Garcia',
       descripcion: this.miFormulario.value.descripcion,
-      date: this.dateNow,
+      date: new Date().toDateString(),
     });
+    this.close();
   }
 }

@@ -15,7 +15,7 @@ export class PublicacionService {
     {
       name: 'Yorlin Garcia',
       descripcion: 'Buenas noches, input de prueba para la descripcion',
-      date: new Date().getTime(),
+      date: new Date().toDateString(),
     },
   ];
 

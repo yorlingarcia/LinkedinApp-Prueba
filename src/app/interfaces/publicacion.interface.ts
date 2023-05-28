@@ -1,5 +1,6 @@
 export interface Publicacion {
   name: string;
   descripcion: string;
-  date: number;
+  date: string;
+  img?: string;
 }
