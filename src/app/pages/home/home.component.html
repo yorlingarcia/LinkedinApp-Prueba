@@ -1,6 +1,9 @@
 <app-splash-screen *ngIf="homeReady; else noSplash"></app-splash-screen>
 <ng-template #noSplash>
-  <app-modal-publicar *ngIf="modalSwitch"></app-modal-publicar>
+  <app-modal-publicar
+    *ngIf="modalSwitch"
+    [dateNow]="dateNow"
+  ></app-modal-publicar>
   <!-- Establecer todo el fondo interno en blanco -->
   <div style="background-color: white">
     <app-navbar></app-navbar>

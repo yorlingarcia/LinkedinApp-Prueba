@@ -1,4 +1,10 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { CardSeguir } from 'src/app/interfaces/card-seguir.interface';
 import { ModalToggleService } from 'src/app/services/modal-toggle.service';
 
@@ -10,8 +16,10 @@ import { ModalToggleService } from 'src/app/services/modal-toggle.service';
 export class HomeComponent implements OnInit, AfterViewInit {
   homeReady: boolean = true;
   modalSwitch: boolean = false;
-
-  constructor(private modalToggleService: ModalToggleService) {}
+  dateNow = new Date().getTime();
+  constructor(private modalToggleService: ModalToggleService) {
+    this.dateNow = new Date().getTime();
+  }
   ngAfterViewInit(): void {
     this.modalToggleService.modal$.subscribe(
       (valor) => (this.modalSwitch = valor)

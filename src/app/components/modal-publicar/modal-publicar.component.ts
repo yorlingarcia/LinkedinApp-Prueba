@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { ModalToggleService } from 'src/app/services/modal-toggle.service';
@@ -9,6 +9,8 @@ import { ModalToggleService } from 'src/app/services/modal-toggle.service';
   styleUrls: ['./modal-publicar.component.scss'],
 })
 export class ModalPublicarComponent {
+  @Input() dateNow: any;
+
   constructor(
     private modalToggleService: ModalToggleService,
     private fb: FormBuilder
@@ -23,6 +25,11 @@ export class ModalPublicarComponent {
   }
 
   guardar() {
-    console.log(this.miFormulario.valid);
+    console.log(
+      'fecha de guardado: ',
+      this.dateNow,
+      'Entrada: ',
+      this.miFormulario.value
+    );
   }
 }
