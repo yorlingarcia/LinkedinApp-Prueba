@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { ModalToggleService } from 'src/app/services/modal-toggle.service';
+import { PublicacionService } from 'src/app/services/publicacion.service';
 
 @Component({
   selector: 'app-modal-publicar',
@@ -13,7 +14,8 @@ export class ModalPublicarComponent {
 
   constructor(
     private modalToggleService: ModalToggleService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private publicacionService: PublicacionService
   ) {}
 
   miFormulario: FormGroup = this.fb.group({
@@ -31,5 +33,10 @@ export class ModalPublicarComponent {
       'Entrada: ',
       this.miFormulario.value
     );
+    this.publicacionService.guardarPublicacion({
+      name: 'Yorlin Garcia',
+      descripcion: this.miFormulario.value,
+      date: this.dateNow,
+    });
   }
 }

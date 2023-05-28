@@ -1,4 +1,4 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column" *ngFor="let publicacion of publicaciones">
   <div class="d-flex flex-row justify-content-between p-2">
     <!-- Informacion del publicador -->
     <div class="d-flex flex-row">
@@ -15,13 +15,13 @@
       <div class="d-flex flex-column ps-2">
         <!-- nombre -->
         <div class="text-start fw-medium">
-          <a href="" class="hoverAction">{{ "Nombre" }}</a>
+          <a href="" class="hoverAction">{{ publicacion.name }}</a>
         </div>
         <!-- Cantidad de seguidores -->
         <div class="text-start">{{ "Seguidores" }}</div>
         <!-- Hora de publicacion -->
         <div class="text-start">
-          {{ tiempoEstimado }} •
+          {{ obeterTiempo(publicacion.date) }} •
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@
   </div>
   <!-- Descripcion -->
   <div>
-    {{ "Descripcion" }}
+    {{ publicacion.descripcion }}
   </div>
   <!-- Imagen -->
   <div>
