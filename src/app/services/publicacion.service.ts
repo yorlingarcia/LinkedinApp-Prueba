@@ -13,11 +13,10 @@ export class PublicacionService {
     {
       name: 'Yorlin Garcia',
       descripcion: 'Buenas noches, input de prueba para la descripcion',
-      date: new Date(),
+      date: this.fecha,
+      dateNumber: this.fecha.getTime(),
     },
   ];
-
-  private publicacionesAuxiliar = [...this.publicaciones];
 
   constructor() {}
 
@@ -32,30 +31,10 @@ export class PublicacionService {
   ordernarArreglo(orden: string) {
     console.log('Entrada a ordenar', this.publicaciones);
     if (orden === 'ascendente') {
-      this.publicaciones.sort((a, b) => a.date.getTime() - b.date.getTime());
+      this.publicaciones.sort((a, b) => a.dateNumber - b.dateNumber);
     } else {
-      this.publicaciones.sort((a, b) => a.date.getTime() - b.date.getTime());
+      this.publicaciones.sort((a, b) => b.dateNumber - a.dateNumber);
     }
     console.log('arreglo ordenado', this.publicaciones);
   }
-
-  // calcularTiempoEstimado(tiempoActual: number): string {
-  //   const fechaPublicacion = new Date(this.fecha);
-  //   const diferenciaTiempo = Math.abs(
-  //     tiempoActual - fechaPublicacion.getTime()
-  //   );
-
-  //   const minutos = Math.floor(diferenciaTiempo / (1000 * 60));
-  //   const horas = Math.floor(minutos / 60);
-  //   const dias = Math.floor(horas / 24);
-
-  //   if (dias > 0) {
-  //     this.tiempoEstimado = `${dias} días atrás`;
-  //   } else if (horas > 0) {
-  //     this.tiempoEstimado = `${horas} horas atrás`;
-  //   } else {
-  //     this.tiempoEstimado = `${minutos} minutos atrás`;
-  //   }
-  //   return this.tiempoEstimado;
-  // }
 }
