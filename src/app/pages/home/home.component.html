@@ -11,8 +11,15 @@
   <div class="container" style="margin: 0 auto">
     <div class="row text-center justify-content-center mt-3">
       <!-- Prefil de Bienvenida y grupo -->
-      <div class="col-3 bg-white rounded p-0">
-        <app-perfil-bienvenida></app-perfil-bienvenida>
+      <div class="col-3 p-0">
+        <!-- Prefil bienvenida -->
+        <div>
+          <app-perfil-bienvenida></app-perfil-bienvenida>
+        </div>
+        <!-- grupos -->
+        <div>
+          <app-grupos></app-grupos>
+        </div>
       </div>
       <!-- Columna principal de crear publicacion y carta de publicacion -->
       <div class="col-5">
@@ -31,7 +38,7 @@
         <div class="bg-white rounded">
           <app-aniadir-feed [listItem]="listItem"></app-aniadir-feed>
         </div>
-        <app-info-app></app-info-app>
+        <app-info-app class="stiky"></app-info-app>
       </div>
     </div>
   </div>
