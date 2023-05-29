@@ -28,5 +28,7 @@
   "page.home.infoApp.linkedin": "LinkedIn Corporation © 2023",
   "page.home.modalPublicacion.crearPublicacion": "Crear Publicación",
   "page.home.modalPublicacion.cualquiera": "Cualquiera",
-  "page.home.modalPublicacion.comentarioPublicacion": "¿Sobre qué quieres hablar?"
+  "page.home.modalPublicacion.comentarioPublicacion": "¿Sobre qué quieres hablar?",
+  "page.home.lineaDivisora.ascendente": "Ascendente",
+  "page.home.lineaDivisora.descendente": "Descendente"
 }

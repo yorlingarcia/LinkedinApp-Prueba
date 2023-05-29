@@ -13,8 +13,4 @@ export class CardPublicacionComponent {
   constructor(private publicacionService: PublicacionService) {
     this.publicaciones = this.publicacionService.getPublicaiones();
   }
-
-  obeterTiempo(tiempoActual: number): string {
-    return this.publicacionService.calcularTiempoEstimado(tiempoActual);
-  }
 }

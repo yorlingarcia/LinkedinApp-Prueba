@@ -30,7 +30,7 @@ export class ModalPublicarComponent {
     this.publicacionService.guardarPublicacion({
       name: 'Yorlin Garcia',
       descripcion: this.miFormulario.value.descripcion,
-      date: new Date().toDateString(),
+      date: new Date(),
     });
     this.close();
   }
