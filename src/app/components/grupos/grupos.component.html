@@ -1,1 +1,41 @@
-<p>grupos works!</p>
+<div class="bg-white rounded">
+  <div class="d-flex flex-row justify-content-between mt-2 p-2">
+    <!-- columan de grupos -->
+    <div class="d-flex flex-column text-start">
+      <div class="my-2">
+        <a class="hoverAction">{{ "page.home.grupos.grupos" | translate }}</a>
+      </div>
+      <div class="my-2">
+        <a class="hoverAction">
+          {{ "page.home.grupos.eventos" | translate }}
+        </a>
+      </div>
+      <div class="my-2">
+        <a class="hoverAction">
+          {{ "page.home.grupos.hashtags" | translate }}
+        </a>
+      </div>
+    </div>
+    <!-- Boton adicionar -->
+    <div class="d-flex align-items-center">
+      <button class="hoverButtonCard" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          data-supported-dps="16x16"
+          fill="currentColor"
+          class="mercado-match"
+          width="16"
+          height="16"
+          focusable="false"
+        >
+          <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <hr class="m-0" />
+  <div class="d-flex align-items-center justify-content-center py-3 hoverDiv">
+    {{ "page.home.grupos.verMas" | translate }}
+  </div>
+</div>

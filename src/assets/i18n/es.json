@@ -30,5 +30,9 @@
   "page.home.modalPublicacion.cualquiera": "Cualquiera",
   "page.home.modalPublicacion.comentarioPublicacion": "¿Sobre qué quieres hablar?",
   "page.home.lineaDivisora.ascendente": "Ascendente",
-  "page.home.lineaDivisora.descendente": "Descendente"
+  "page.home.lineaDivisora.descendente": "Descendente",
+  "page.home.grupos.grupos": "Grupos",
+  "page.home.grupos.eventos": "Eventos",
+  "page.home.grupos.hashtags": "Hashtags seguidos",
+  "page.home.grupos.verMas": "Ver más"
 }
