@@ -37,4 +37,7 @@ export class PublicacionService {
     }
     console.log('arreglo ordenado', this.publicaciones);
   }
+  eliminarPublicacion(index: number) {
+    this.publicaciones.splice(index, 1);
+  }
 }

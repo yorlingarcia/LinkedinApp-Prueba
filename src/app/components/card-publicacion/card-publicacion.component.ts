@@ -13,4 +13,8 @@ export class CardPublicacionComponent {
   constructor(private publicacionService: PublicacionService) {
     this.publicaciones = this.publicacionService.getPublicaiones();
   }
+
+  eliminarPublicacion(index: number) {
+    this.publicacionService.eliminarPublicacion(index);
+  }
 }
