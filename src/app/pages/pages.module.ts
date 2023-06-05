@@ -18,6 +18,7 @@ import { ModalPublicarComponent } from '../components/modal-publicar/modal-publi
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LineaDivisoraComponent } from '../components/linea-divisora/linea-divisora.component';
 import { GruposComponent } from '../components/grupos/grupos.component';
+import { MenuComponent } from '../components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { GruposComponent } from '../components/grupos/grupos.component';
     ModalPublicarComponent,
     LineaDivisoraComponent,
     GruposComponent,
+    MenuComponent,
   ],
   imports: [
     CommonModule,
