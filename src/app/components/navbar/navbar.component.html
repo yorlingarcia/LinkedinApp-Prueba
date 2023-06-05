@@ -174,19 +174,12 @@
     />
     <a
       class="nav-link dropdown-toggle"
-      href="#"
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
       {{ "page.home.navBar.yo" | translate }}
     </a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><hr class="dropdown-divider" /></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
   </div>
   <!-- Boton negocios -->
   <div
@@ -210,26 +203,26 @@
     </div>
     <a
       class="nav-link dropdown-toggle"
-      href="#"
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
       {{ "page.home.navBar.paraNegocios" | translate }}
     </a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><hr class="dropdown-divider" /></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
   </div>
   <!-- Enlace Probar Premium -->
   <div
-    class="col-2 d-flex flex-column align-items-center justify-content-center"
+    class="col-1 d-flex flex-column align-items-center justify-content-center"
+    style="cursor: pointer"
   >
-    <a href="#" style="color: darkgoldenrod">{{
+    <a style="color: darkgoldenrod; text-decoration: underline">{{
       "page.home.navBar.probarPremium" | translate
     }}</a>
+  </div>
+  <!-- Boton para cambiar de idioma -->
+  <div
+    class="col-1 d-flex flex-column align-items-center justify-content-center"
+  >
+    <button>Idioma</button>
   </div>
 </div>
