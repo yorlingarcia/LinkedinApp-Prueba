@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Injectable, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'src/app/interfaces';
 
 @Component({
@@ -15,6 +16,11 @@ export class NavbarComponent {
       label: 'page.home.navBar.idioma.en',
     },
   ];
+  private router = inject(Router);
+
+  redirecTo(path: string) {
+    this.router.navigateByUrl(`/${path}`);
+  }
   // menuItems: MenuItem[] = [
   //   {
   //     label: 'component.navbar.servicios',
