@@ -19,6 +19,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LineaDivisoraComponent } from '../components/linea-divisora/linea-divisora.component';
 import { GruposComponent } from '../components/grupos/grupos.component';
 import { MenuComponent } from '../components/menu/menu.component';
+import { MiRedComponent } from './mi-red/mi-red.component';
+import { EmpleosComponent } from './empleos/empleos.component';
+import { MensajesComponent } from './mensajes/mensajes.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { MenuComponent } from '../components/menu/menu.component';
     LineaDivisoraComponent,
     GruposComponent,
     MenuComponent,
+    MiRedComponent,
+    EmpleosComponent,
+    MensajesComponent,
+    NotificacionesComponent,
+    PerfilComponent,
   ],
   imports: [
     CommonModule,
