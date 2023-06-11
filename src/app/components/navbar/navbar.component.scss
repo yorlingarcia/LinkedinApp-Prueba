@@ -6,3 +6,14 @@
 .opacity-hover:hover {
   opacity: 1;
 }
+
+.hoverAction {
+  text-decoration: none;
+  color: rgb(21, 25, 29);
+}
+
+.hoverAction:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(13, 110, 253);
+  color: rgb(13, 110, 253);
+}

@@ -224,15 +224,15 @@
     class="col-1 d-flex flex-column align-items-center justify-content-center"
   >
     <a
-      class="nav-link dropdown-toggle"
+      class="nav-link dropdown-toggle hoverAction"
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       [cdkMenuTriggerFor]="menuComponent.menu"
     >
-      Menu
+      {{ "page.home.navBar.idioma" | translate }}
     </a>
   </div>
 </div>
 
-<app-menu #menuComponent [items]="menuItems">Menu</app-menu>
+<app-menu #menuComponent [items]="menuItems"></app-menu>
