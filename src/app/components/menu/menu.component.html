@@ -7,13 +7,15 @@
           [cdkMenuTriggerFor]="subMenu"
           *ngIf="menuComponent.menu as subMenu"
         >
-          <div>{{ item.label | translate }}</div>
+          <div>
+            {{ item.label | translate }}
+          </div>
           <div *ngIf="item.children">▸</div>
         </button>
         <app-menu #menuComponent [items]="item.children!"></app-menu>
       </ng-container>
       <ng-template #leafNode>
-        <button cdkMenuItem>
+        <button cdkMenuItem (click)="cambiarLenguaje(item.label)">
           {{ item.label | translate }}
         </button>
       </ng-template>

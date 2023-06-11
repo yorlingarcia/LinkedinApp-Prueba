@@ -16,8 +16,9 @@ export class MenuComponent {
 
   constructor(private translateService: TranslateService) {}
 
-  public cambiarLenguaje(lang: string) {
-    this.translateService.setDefaultLang(lang);
-    this.translateService.use(lang);
+  cambiarLenguaje(lang: string) {
+    const lenguajeSeleccionado = lang.split('.').pop()!.toString();
+    this.translateService.setDefaultLang(lenguajeSeleccionado);
+    this.translateService.use(lenguajeSeleccionado);
   }
 }
