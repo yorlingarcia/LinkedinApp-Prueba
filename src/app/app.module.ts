@@ -10,16 +10,26 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { AngularMaterialModule } from './AngularMaterial/angular-material.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    SplashScreenComponent,
+    MenuComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularMaterialModule,
     PagesModule,
     BrowserAnimationsModule,
     HttpClientModule,

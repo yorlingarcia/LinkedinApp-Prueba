@@ -1,45 +1,38 @@
-<app-splash-screen *ngIf="homeReady; else noSplash"></app-splash-screen>
-<ng-template #noSplash>
-  <app-modal-publicar
-    *ngIf="modalSwitch"
-    [dateNow]="dateNow"
-  ></app-modal-publicar>
-  <!-- Establecer todo el fondo interno en blanco -->
-  <div style="background-color: white">
-    <app-navbar></app-navbar>
-  </div>
-  <div class="container" style="margin: 0 auto">
-    <div class="row text-center justify-content-center mt-3">
-      <!-- Prefil de Bienvenida y grupo -->
-      <div class="col-3 p-0">
-        <!-- Prefil bienvenida -->
-        <div>
-          <app-perfil-bienvenida></app-perfil-bienvenida>
-        </div>
-        <!-- grupos -->
-        <div class="stiky p-0">
-          <app-grupos></app-grupos>
-        </div>
+<app-modal-publicar
+  *ngIf="modalSwitch"
+  [dateNow]="dateNow"
+></app-modal-publicar>
+<div class="container" style="margin: 0 auto">
+  <div class="row text-center justify-content-center mt-3">
+    <!-- Prefil de Bienvenida y grupo -->
+    <div class="col-3 p-0">
+      <!-- Prefil bienvenida -->
+      <div>
+        <app-perfil-bienvenida></app-perfil-bienvenida>
       </div>
-      <!-- Columna principal de crear publicacion y carta de publicacion -->
-      <div class="col-5">
-        <div class="bg-white rounded">
-          <app-crear-publicacion></app-crear-publicacion>
-        </div>
-        <!-- Linea divisora de ordenar -> Pendiente volverla un componente -->
-        <div>
-          <app-linea-divisora></app-linea-divisora>
-        </div>
-        <div class="">
-          <app-card-publicacion></app-card-publicacion>
-        </div>
-      </div>
-      <div class="col-3 p-0">
-        <div class="bg-white rounded">
-          <app-aniadir-feed [listItem]="listItem"></app-aniadir-feed>
-        </div>
-        <app-info-app class="stiky"></app-info-app>
+      <!-- grupos -->
+      <div class="stiky p-0">
+        <app-grupos></app-grupos>
       </div>
     </div>
+    <!-- Columna principal de crear publicacion y carta de publicacion -->
+    <div class="col-5">
+      <div class="bg-white rounded">
+        <app-crear-publicacion></app-crear-publicacion>
+      </div>
+      <!-- Linea divisora de ordenar -> Pendiente volverla un componente -->
+      <div>
+        <app-linea-divisora></app-linea-divisora>
+      </div>
+      <div class="">
+        <app-card-publicacion></app-card-publicacion>
+      </div>
+    </div>
+    <div class="col-3 p-0">
+      <div class="bg-white rounded">
+        <app-aniadir-feed [listItem]="listItem"></app-aniadir-feed>
+      </div>
+      <app-info-app class="stiky"></app-info-app>
+    </div>
   </div>
-</ng-template>
+</div>

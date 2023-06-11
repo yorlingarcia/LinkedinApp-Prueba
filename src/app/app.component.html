@@ -1,1 +1,8 @@
+<app-splash-screen *ngIf="homeReady; else noSplash"></app-splash-screen>
+<ng-template #noSplash>
+  <!-- Establecer todo el fondo interno en blanco -->
+  <div style="background-color: white">
+    <app-navbar></app-navbar>
+  </div>
+</ng-template>
 <router-outlet></router-outlet>
