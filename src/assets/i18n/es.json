@@ -35,5 +35,7 @@
   "page.home.grupos.eventos": "Eventos",
   "page.home.grupos.hashtags": "Hashtags seguidos",
   "page.home.grupos.verMas": "Ver más",
-  "page.home.navBar.idioma": "Idioma"
+  "page.home.navBar.idioma": "Idioma",
+  "page.home.navBar.idioma.es": "Español",
+  "page.home.navBar.idioma.en": "Ingles"
 }
