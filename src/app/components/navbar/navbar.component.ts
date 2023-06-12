@@ -1,6 +1,6 @@
-import { Component, Injectable, inject } from '@angular/core';
+import { Component, Injectable, Input, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuItem } from 'src/app/interfaces';
+import { ItemsNavBar, MenuItem } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +8,7 @@ import { MenuItem } from 'src/app/interfaces';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  @Input() itemsNavBar: ItemsNavBar[] = [];
   menuItems: MenuItem[] = [
     {
       label: 'page.home.navBar.idioma.es',
@@ -16,10 +17,11 @@ export class NavbarComponent {
       label: 'page.home.navBar.idioma.en',
     },
   ];
+  currentIndex: number = 0;
   private router = inject(Router);
-
-  redirecTo(path: string) {
+  redirecTo(path: string, index: number) {
     this.router.navigateByUrl(`/${path}`);
+    this.currentIndex = index;
   }
   // menuItems: MenuItem[] = [
   //   {

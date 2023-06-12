@@ -7,6 +7,15 @@
   opacity: 1;
 }
 
+.desactivate {
+  border-bottom: none;
+  opacity: 0.7;
+}
+.activate {
+  opacity: 1;
+  border-bottom: solid;
+}
+
 .hoverAction {
   text-decoration: none;
   color: rgb(21, 25, 29);
