@@ -4,6 +4,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CdkMenuModule } from '@angular/cdk/menu';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [],
@@ -13,6 +14,7 @@ import { CdkMenuModule } from '@angular/cdk/menu';
     MatIconModule,
     MatButtonModule,
     CdkMenuModule,
+    MatTreeModule,
   ],
 })
 export class AngularMaterialModule {}

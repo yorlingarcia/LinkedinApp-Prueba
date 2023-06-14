@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AngularMaterialModule } from '../AngularMaterial/angular-material.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { AniadirFeedComponent } from '../components/aniadir-feed/aniadir-feed.component';
-import { CardMensajeComponent } from '../components/card-mensaje/card-mensaje.component';
+
 import { CardPublicacionComponent } from '../components/card-publicacion/card-publicacion.component';
 import { InfoAppComponent } from '../components/info-app/info-app.component';
 import { PerfilBienvenidaComponent } from '../components/perfil-bienvenida/perfil-bienvenida.component';
@@ -26,7 +26,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     HomeComponent,
     PerfilBienvenidaComponent,
     AniadirFeedComponent,
-    CardMensajeComponent,
+
     InfoAppComponent,
     CardPublicacionComponent,
     CrearPublicacionComponent,

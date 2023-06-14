@@ -1,0 +1,30 @@
+.cuerpo-principal {
+  width: 18rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.cuerpo-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuerpo-small:hover {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.boton-interaccion {
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.boton-interaccion:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}

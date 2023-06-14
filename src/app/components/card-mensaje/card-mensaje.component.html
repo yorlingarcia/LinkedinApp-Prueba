@@ -1,1 +1,97 @@
-<p>card-mensaje works!</p>
+<div
+  class="cuerpo-principal rounded-top border d-flex flex-column justify-content-center"
+>
+  <!-- fila inicial -->
+  <div class="cuerpo-small p-2">
+    <div
+      class="d-flex flex-row align-items-center"
+      (click)="changeState()"
+      style="cursor: pointer"
+    >
+      <!-- imagen de perfil -->
+      <div>
+        <img
+          src="./assets/img/perfil.jpeg"
+          alt="Imagen de perfil"
+          style="height: 2rem; width: 2rem"
+          class="rounded-circle"
+        />
+      </div>
+      <!-- titulo mensaje -->
+      <div class="ms-2">{{ "Mensajes" | translate }}</div>
+    </div>
+    <!-- contendor de las interacciones -->
+    <div class="d-flex flex-row">
+      <!-- boton de tres puntos -->
+      <button class="boton-interaccion ms-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          data-supported-dps="24x24"
+          fill="currentColor"
+          class="mercado-match"
+          width="24"
+          height="24"
+          focusable="false"
+        >
+          <path
+            d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"
+          ></path>
+        </svg>
+      </button>
+      <!-- boton de nuevo mensaje -->
+      <button class="boton-interaccion ms-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          data-supported-dps="16x16"
+          fill="currentColor"
+          class="mercado-match"
+          width="16"
+          height="16"
+          focusable="false"
+        >
+          <path
+            d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"
+          ></path>
+        </svg>
+      </button>
+      <!-- boton de abrir y cerrar -->
+      <button
+        class="boton-interaccion ms-2"
+        type="button"
+        (click)="changeState()"
+      >
+        <svg
+          *ngIf="!bodyCardEneable; else changeIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          data-supported-dps="16x16"
+          fill="currentColor"
+          class="mercado-match"
+          width="16"
+          height="16"
+          focusable="false"
+        >
+          <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+        </svg>
+        <ng-template #changeIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            data-supported-dps="16x16"
+            fill="currentColor"
+            class="mercado-match"
+            width="16"
+            height="16"
+            focusable="false"
+          >
+            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+          </svg>
+        </ng-template>
+      </button>
+    </div>
+  </div>
+  <!-- fila secundaria condicionada  -->
+  <div *ngIf="bodyCardEneable" class="border-top">Holaaaaa</div>
+</div>
