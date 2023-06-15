@@ -1,5 +1,6 @@
 <div
-  class="cuerpo-principal rounded-top border d-flex flex-column justify-content-center"
+  class="cuerpo-principal rounded-top border d-flex flex-column justify-content-start"
+  [style.height]="bodyCardEneable ? '80vh' : 'auto'"
 >
   <!-- fila inicial -->
   <div class="cuerpo-small p-2">
@@ -48,5 +49,32 @@
     </div>
   </div>
   <!-- fila secundaria condicionada  -->
-  <div *ngIf="bodyCardEneable" class="border-top">Holaaaaa</div>
+  <div
+    *ngIf="bodyCardEneable"
+    class="border-top d-flex flex-column justify-content-center align-content-center"
+  >
+    <!-- Buscador -->
+    <div
+      class="d-flex flex-row m-3 rounded border justify-content-around align-items-center"
+      style="background-color: #eef3f8; height: 2rem"
+    >
+      <img
+        src="./assets/svg/icons8-búsqueda.svg"
+        alt=""
+        style="color: rgba(214, 214, 214, 0.836); width: 1rem; height: 1rem"
+      />
+      <input
+        type="search"
+        placeholder="Buscar"
+        style="border: none; background-color: transparent"
+      />
+      <img
+        src="./assets/svg/iconConfiguracion.svg"
+        alt=""
+        style="width: 1rem; height: 1rem"
+      />
+    </div>
+    <!-- cartas de mensajes -->
+    <div>Carta</div>
+  </div>
 </div>
