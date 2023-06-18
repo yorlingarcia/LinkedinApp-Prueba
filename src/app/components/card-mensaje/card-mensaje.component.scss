@@ -28,3 +28,18 @@
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
 }
+
+.image-input-mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    object-fit: cover;
+    width: 16rem;
+    height: 16rem;
+  }
+  p {
+    text-align: center;
+  }
+}

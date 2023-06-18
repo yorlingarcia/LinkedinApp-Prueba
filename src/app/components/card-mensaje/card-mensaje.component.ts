@@ -8,6 +8,7 @@ import { MenuItem } from 'src/app/interfaces';
 })
 export class CardMensajeComponent {
   bodyCardEneable: boolean = false;
+  mostrarCampoMensaje: boolean = false;
   changeState() {
     this.bodyCardEneable = !this.bodyCardEneable;
   }
@@ -32,4 +33,12 @@ export class CardMensajeComponent {
       label: 'component.mensaje.config.noDeseados',
     },
   ];
+
+  onFocus() {
+    this.mostrarCampoMensaje = true;
+  }
+
+  onBlur() {
+    this.mostrarCampoMensaje = false;
+  }
 }

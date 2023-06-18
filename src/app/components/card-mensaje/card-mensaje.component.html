@@ -67,6 +67,8 @@
         type="search"
         placeholder="Buscar"
         style="border: none; background-color: transparent"
+        (focus)="onFocus()"
+        (blur)="onBlur()"
       />
       <button
         class="boton-interaccion"
@@ -80,7 +82,12 @@
       </button>
     </div>
     <!-- cartas de mensajes -->
-    <div>Carta</div>
+    <div class="image-input-mensaje" *ngIf="mostrarCampoMensaje">
+      <img src="../../../assets/svg/bitmap.svg" alt="" />
+      <p>
+        Busca mensajes por destinatario, contenido o nombre de la conversación
+      </p>
+    </div>
   </div>
 </div>
 
