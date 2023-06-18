@@ -68,13 +68,20 @@
         placeholder="Buscar"
         style="border: none; background-color: transparent"
       />
-      <img
-        src="./assets/svg/iconConfiguracion.svg"
-        alt=""
-        style="width: 1rem; height: 1rem"
-      />
+      <button
+        class="boton-interaccion"
+        [cdkMenuTriggerFor]="menuComponent.menu"
+      >
+        <img
+          src="./assets/svg/iconConfiguracion.svg"
+          alt=""
+          style="width: 1rem; height: 1rem"
+        />
+      </button>
     </div>
     <!-- cartas de mensajes -->
     <div>Carta</div>
   </div>
 </div>
+
+<app-menu #menuComponent [items]="menuItems"></app-menu>

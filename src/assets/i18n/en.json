@@ -37,5 +37,11 @@
   "page.home.grupos.verMas": "See more",
   "page.home.navBar.idioma": "Language",
   "page.home.navBar.idioma.es": "Spanish",
-  "page.home.navBar.idioma.en": "English"
+  "page.home.navBar.idioma.en": "English",
+  "component.mensaje.config.archivados": "Archived",
+  "component.mensaje.config.misContactos": "My Contacts",
+  "component.mensaje.config.marcados": "Marked",
+  "component.mensaje.config.noLeidos": "Not read",
+  "component.mensaje.config.mensajesInMail": "InMail Messages",
+  "component.mensaje.config.noDeseados": "Not wanted"
 }
