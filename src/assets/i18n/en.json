@@ -43,5 +43,14 @@
   "component.mensaje.config.marcados": "Marked",
   "component.mensaje.config.noLeidos": "Not read",
   "component.mensaje.config.mensajesInMail": "InMail Messages",
-  "component.mensaje.config.noDeseados": "Not wanted"
+  "component.mensaje.config.noDeseados": "Not wanted",
+  "component.mensaje.prioritarios": "Priority",
+  "component.mensaje.otros": "Others",
+  "component.mensaje.input.parrafo": "Search messages by recipient, content, or conversation name",
+  "component.mensaje.card.opciones.moverOtros": "Move to <<Other>>",
+  "component.mensaje.card.opciones.marcarFavorito": "Mark as favourite",
+  "component.mensaje.card.opciones.archivar": "Archive",
+  "component.mensaje.card.opciones.eliminar": "Eliminate",
+  "component.mensaje.card.opciones.marcarNoLeido": "Mark as unread",
+  "component.mensaje.card.opciones.silenciar": "Mute"
 }

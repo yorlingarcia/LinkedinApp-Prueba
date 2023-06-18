@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuItem } from 'src/app/interfaces';
+import { CardMensaje, MenuItem } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-card-mensaje',
@@ -9,9 +9,48 @@ import { MenuItem } from 'src/app/interfaces';
 export class CardMensajeComponent {
   bodyCardEneable: boolean = false;
   mostrarCampoMensaje: boolean = false;
+  currentValue: number = 1;
   changeState() {
     this.bodyCardEneable = !this.bodyCardEneable;
   }
+
+  CardsMensaje: CardMensaje[] = [
+    {
+      nombre: 'Yorlin Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '12 abr',
+    },
+    {
+      nombre: 'Yorlin Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '11 abr',
+    },
+    {
+      nombre: 'Osney Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '19 jul 2022',
+    },
+    {
+      nombre: 'Garcia Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '5 ene 2022',
+    },
+    {
+      nombre: 'Sierra Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '13 dic 2021',
+    },
+  ];
 
   menuItems: MenuItem[] = [
     {
@@ -34,11 +73,36 @@ export class CardMensajeComponent {
     },
   ];
 
+  menuItemsCard: MenuItem[] = [
+    {
+      label: 'component.mensaje.card.opciones.moverOtros',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarFavorito',
+    },
+    {
+      label: 'component.mensaje.card.opciones.archivar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.eliminar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarNoLeido',
+    },
+    {
+      label: 'component.mensaje.card.opciones.silenciar',
+    },
+  ];
+
   onFocus() {
     this.mostrarCampoMensaje = true;
   }
 
   onBlur() {
     this.mostrarCampoMensaje = false;
+  }
+
+  onValueindex(value: number) {
+    this.currentValue = value;
   }
 }
