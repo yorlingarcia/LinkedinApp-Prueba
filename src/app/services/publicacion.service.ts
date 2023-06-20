@@ -29,13 +29,11 @@ export class PublicacionService {
   }
   // Metodo para ordenar el arreglo publicaciones de forma ascendente y descendente
   ordernarArreglo(orden: string) {
-    console.log('Entrada a ordenar', this.publicaciones);
     if (orden === 'ascendente') {
       this.publicaciones.sort((a, b) => a.dateNumber - b.dateNumber);
     } else {
       this.publicaciones.sort((a, b) => b.dateNumber - a.dateNumber);
     }
-    console.log('arreglo ordenado', this.publicaciones);
   }
   eliminarPublicacion(index: number) {
     this.publicaciones.splice(index, 1);

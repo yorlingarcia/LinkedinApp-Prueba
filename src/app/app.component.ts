@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { ItemsNavBar } from './interfaces';
+import { MenuService } from './services/menu.service';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +12,12 @@ import { ItemsNavBar } from './interfaces';
 export class AppComponent implements OnInit {
   title = 'PruebaTecnicaImagineApp';
   private roter = inject(Router);
-  private selectedLanguage = 'es';
-  constructor(private translateService: TranslateService) {
-    this.translateService.setDefaultLang(this.selectedLanguage);
-    this.translateService.use(this.selectedLanguage);
+  constructor(
+    private translateService: TranslateService,
+    private menu: MenuService
+  ) {
+    this.translateService.setDefaultLang(this.menu.languageSelected);
+    this.translateService.use(this.menu.languageSelected);
   }
 
   modalSwitch: boolean = false;

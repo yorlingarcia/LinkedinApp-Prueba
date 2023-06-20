@@ -15,7 +15,7 @@
         <app-menu #menuComponent [items]="item.children!"></app-menu>
       </ng-container>
       <ng-template #leafNode>
-        <button cdkMenuItem (click)="cambiarLenguaje(item.label)">
+        <button cdkMenuItem (click)="opcionSelected(item.label)">
           {{ item.label | translate }}
         </button>
       </ng-template>

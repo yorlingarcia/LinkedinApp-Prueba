@@ -1,6 +1,7 @@
 import { Component, Input, TemplateRef, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'src/app/interfaces';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,11 +15,9 @@ export class MenuComponent {
     return item.children && item.children.length > 0;
   }
 
-  constructor(private translateService: TranslateService) {}
+  constructor(private menuService: MenuService) {}
 
-  cambiarLenguaje(lang: string) {
-    const lenguajeSeleccionado = lang.split('.').pop()!.toString();
-    this.translateService.setDefaultLang(lenguajeSeleccionado);
-    this.translateService.use(lenguajeSeleccionado);
+  opcionSelected(opcion: string) {
+    this.menuService.accionMenu(opcion);
   }
 }
