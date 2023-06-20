@@ -14,7 +14,7 @@ export class CardMensajeComponent {
     this.bodyCardEneable = !this.bodyCardEneable;
   }
 
-  CardsMensaje: CardMensaje[] = [
+  cardsMensaje: CardMensaje[] = [
     {
       nombre: 'Yorlin Garcia',
       srcImg: './assets/img/perfil.jpeg',
@@ -52,6 +52,16 @@ export class CardMensajeComponent {
     },
   ];
 
+  cardsMensajeOtros: CardMensaje[] = [
+    {
+      nombre: 'Yorlin Garcia',
+      srcImg: './assets/img/perfil.jpeg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
+      date: '12 abr',
+    },
+  ];
+
   menuItems: MenuItem[] = [
     {
       label: 'component.mensaje.config.archivados',
@@ -70,27 +80,6 @@ export class CardMensajeComponent {
     },
     {
       label: 'component.mensaje.config.noDeseados',
-    },
-  ];
-
-  menuItemsCard: MenuItem[] = [
-    {
-      label: 'component.mensaje.card.opciones.moverOtros',
-    },
-    {
-      label: 'component.mensaje.card.opciones.marcarFavorito',
-    },
-    {
-      label: 'component.mensaje.card.opciones.archivar',
-    },
-    {
-      label: 'component.mensaje.card.opciones.eliminar',
-    },
-    {
-      label: 'component.mensaje.card.opciones.marcarNoLeido',
-    },
-    {
-      label: 'component.mensaje.card.opciones.silenciar',
     },
   ];
 

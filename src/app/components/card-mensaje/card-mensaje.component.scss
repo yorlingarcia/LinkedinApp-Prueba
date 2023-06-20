@@ -52,38 +52,3 @@
   color: #057642;
   cursor: pointer;
 }
-
-.hoverAction {
-  cursor: pointer;
-}
-.hoverAction:hover {
-  background-color: rgba(219, 219, 219, 0.4);
-  .hoverValidation {
-    display: none;
-  }
-  .hoverButtonCard {
-    display: inline;
-  }
-}
-.hoverButtonCard {
-  background-color: transparent;
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  display: none;
-}
-.hoverButtonCard:hover {
-  border-radius: 50%;
-  background-color: rgb(219, 219, 219);
-}
-
-.descripcion {
-  padding-right: 1rem;
-  height: 3rem;
-  width: 11.5rem;
-  p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}

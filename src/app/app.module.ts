@@ -15,6 +15,7 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
 import { MenuComponent } from './components/menu/menu.component';
 import { AngularMaterialModule } from './AngularMaterial/angular-material.module';
 import { CardMensajeComponent } from './components/card-mensaje/card-mensaje.component';
+import { MensajeCardInfoComponent } from './components/mensaje-card-info/mensaje-card-info.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,6 +28,7 @@ export function createTranslateLoader(http: HttpClient) {
     SplashScreenComponent,
     MenuComponent,
     CardMensajeComponent,
+    MensajeCardInfoComponent,
   ],
   imports: [
     BrowserModule,
