@@ -95,6 +95,7 @@ export class CardMensajeComponent {
 
   onValueindex(value: number) {
     this.currentValue = value;
-    this.constante.currentValue = this.currentValue;
+    this.constante.setCurrentValue(value);
+    console.log(this.constante.getCurrentValue());
   }
 }

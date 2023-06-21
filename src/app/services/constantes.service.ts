@@ -7,6 +7,12 @@ import { CardMensaje } from '../interfaces';
 export class ConstantesService {
   //valor para la seccion de mensajes 1 -> prioritarios, 2 -> Otros
   currentValue: number = 1;
+  getCurrentValue() {
+    return this.currentValue;
+  }
+  setCurrentValue(value: number) {
+    this.currentValue = value;
+  }
   cardsMensaje: CardMensaje[] = [
     {
       nombre: 'Yorlin Garcia',
@@ -68,7 +74,7 @@ export class ConstantesService {
   }
 
   eliminarCardsMensajeOtros(index: number) {
-    this.cardsMensaje.splice(index, 1);
+    this.cardsMensajeOtros.splice(index, 1);
   }
 
   constructor() {}

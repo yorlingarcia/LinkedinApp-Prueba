@@ -26,17 +26,15 @@ export class MenuService {
     }
     //validacion para eliminar el componente
     if (opcion.includes('eliminar')) {
-      console.log('Entrada a eliminar');
       this.eliminar();
     }
   }
 
   eliminar() {
-    if (this.constantes.currentValue === 1) {
+    if (this.constantes.getCurrentValue() === 1) {
       this.constantes.eliminarCardsMensaje(this.indiceArray);
-    } else if (this.constantes.currentValue === 2) {
+    } else if (this.constantes.getCurrentValue() === 2) {
       this.constantes.eliminarCardsMensajeOtros(this.indiceArray);
     }
-    console.log(this.constantes.cardsMensaje);
   }
 }
