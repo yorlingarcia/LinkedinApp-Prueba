@@ -5,6 +5,8 @@ import { CardMensaje } from '../interfaces';
   providedIn: 'root',
 })
 export class ConstantesService {
+  //valor para la seccion de mensajes 1 -> prioritarios, 2 -> Otros
+  currentValue: number = 1;
   cardsMensaje: CardMensaje[] = [
     {
       nombre: 'Yorlin Garcia',
@@ -43,6 +45,14 @@ export class ConstantesService {
     },
   ];
 
+  getCardsMensaje() {
+    return this.cardsMensaje;
+  }
+
+  eliminarCardsMensaje(index: number) {
+    this.cardsMensaje.splice(index, 1);
+  }
+
   cardsMensajeOtros: CardMensaje[] = [
     {
       nombre: 'Yorlin Garcia',
@@ -52,6 +62,14 @@ export class ConstantesService {
       date: '12 abr',
     },
   ];
+
+  getCardsMensajeOtros() {
+    return this.cardsMensajeOtros;
+  }
+
+  eliminarCardsMensajeOtros(index: number) {
+    this.cardsMensaje.splice(index, 1);
+  }
 
   constructor() {}
 }

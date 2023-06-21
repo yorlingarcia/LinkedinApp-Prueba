@@ -1,6 +1,6 @@
 <div
-  *ngFor="let card of cardsMensaje"
-  class="d-flex flex-row justify-content-between p-2 hoverAction"
+  *ngFor="let card of cardsMensaje; let i = index"
+  class="d-flex flex-row justify-content-between hoverAction align-items-center p-1"
 >
   <!-- Informacion del publicador -->
   <div class="d-flex flex-row">
@@ -14,46 +14,40 @@
       />
     </div>
     <!-- Contenedor de informacion del publicador -->
-    <div class="d-flex flex-column ps-2">
-      <!-- nombre -->
-      <div class="text-start fw-medium">
-        {{ card.nombre }}
+    <div
+      class="d-flex flex-column"
+      style="padding-left: 1rem; max-width: 13rem; width: auto"
+    >
+      <div
+        class="d-flex flex-row justify-content-between align-items-center"
+        style="height: 2rem"
+      >
+        <!-- nombre -->
+        <div class="text-start fw-medium">
+          {{ card.nombre }}
+        </div>
+        <!-- Hora de Publicacion -->
+        <div class="text-end hoverValidation">
+          {{ card.date }}
+        </div>
+        <!-- Boton de opciones -->
+        <div class="hoverButtonCard">
+          <Button
+            type="button"
+            [cdkMenuTriggerFor]="menuComponentCard.menu"
+            (click)="actualizarIndice(i)"
+          >
+            <img src="./assets/svg/iconoTresPuntos2.svg" alt="" />
+          </Button>
+        </div>
       </div>
+
       <!-- Descripcion -->
       <div class="descripcion">
         <p>
           {{ card.description }}
         </p>
       </div>
-    </div>
-  </div>
-  <!-- Seccion de opciones-->
-  <div class="d-flex flex-column">
-    <!-- Hora de publicacion -->
-    <div class="text-start hoverValidation">
-      {{ card.date }}
-    </div>
-    <div style="width: 1.8rem; height: 1.8rem">
-      <Button
-        class="hoverButtonCard"
-        type="button"
-        [cdkMenuTriggerFor]="menuComponentCard.menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          data-supported-dps="24x24"
-          fill="currentColor"
-          class="mercado-match"
-          width="24"
-          height="24"
-          focusable="false"
-        >
-          <path
-            d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"
-          ></path>
-        </svg>
-      </Button>
     </div>
   </div>
 </div>

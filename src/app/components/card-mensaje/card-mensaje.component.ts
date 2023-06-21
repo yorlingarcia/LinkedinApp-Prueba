@@ -14,8 +14,8 @@ export class CardMensajeComponent {
   cardsMensaje: CardMensaje[] = [];
   cardsMensajeOtros: CardMensaje[] = [];
   constructor(private constante: ConstantesService) {
-    this.cardsMensaje = this.constante.cardsMensaje;
-    this.cardsMensajeOtros = this.constante.cardsMensajeOtros;
+    this.cardsMensaje = this.constante.getCardsMensaje();
+    this.cardsMensajeOtros = this.constante.getCardsMensajeOtros();
   }
 
   changeState() {
@@ -95,5 +95,6 @@ export class CardMensajeComponent {
 
   onValueindex(value: number) {
     this.currentValue = value;
+    this.constante.currentValue = this.currentValue;
   }
 }

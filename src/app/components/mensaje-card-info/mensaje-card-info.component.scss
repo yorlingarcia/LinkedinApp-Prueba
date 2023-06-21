@@ -11,11 +11,13 @@
   }
 }
 .hoverButtonCard {
-  background-color: transparent;
-  border: none;
-  width: 2rem;
-  height: 2rem;
   display: none;
+  button {
+    background-color: transparent;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+  }
 }
 .hoverButtonCard:hover {
   border-radius: 50%;
@@ -23,9 +25,8 @@
 }
 
 .descripcion {
-  padding-right: 1rem;
-  height: 3rem;
-  width: 11.5rem;
+  height: auto;
+  width: 100%;
   p {
     white-space: nowrap;
     overflow: hidden;
