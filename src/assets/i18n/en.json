@@ -48,6 +48,7 @@
   "component.mensaje.otros": "Others",
   "component.mensaje.input.parrafo": "Search messages by recipient, content, or conversation name",
   "component.mensaje.card.opciones.moverOtros": "Move to <<Other>>",
+  "component.mensaje.card.opciones.moverPrioritarios": "Mover a <<Priority>>",
   "component.mensaje.card.opciones.marcarFavorito": "Mark as favourite",
   "component.mensaje.card.opciones.archivar": "Archive",
   "component.mensaje.card.opciones.eliminar": "Eliminate",

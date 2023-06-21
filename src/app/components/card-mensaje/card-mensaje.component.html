@@ -111,11 +111,13 @@
       <div class="d-flex flex-column" *ngIf="currentValue === 1; else otros">
         <app-mensaje-card-info
           [cardsMensaje]="cardsMensaje"
+          [menuItemsCard]="menuItemsCard"
         ></app-mensaje-card-info>
       </div>
       <ng-template #otros class="d-flex flex-column">
         <app-mensaje-card-info
           [cardsMensaje]="cardsMensajeOtros"
+          [menuItemsCard]="menuItemsCardOtros"
         ></app-mensaje-card-info>
       </ng-template>
     </ng-template>

@@ -8,25 +8,5 @@ import { CardMensaje, MenuItem } from 'src/app/interfaces';
 })
 export class MensajeCardInfoComponent {
   @Input() cardsMensaje: CardMensaje[] = [];
-
-  menuItemsCard: MenuItem[] = [
-    {
-      label: 'component.mensaje.card.opciones.moverOtros',
-    },
-    {
-      label: 'component.mensaje.card.opciones.marcarFavorito',
-    },
-    {
-      label: 'component.mensaje.card.opciones.archivar',
-    },
-    {
-      label: 'component.mensaje.card.opciones.eliminar',
-    },
-    {
-      label: 'component.mensaje.card.opciones.marcarNoLeido',
-    },
-    {
-      label: 'component.mensaje.card.opciones.silenciar',
-    },
-  ];
+  @Input() menuItemsCard: MenuItem[] = [];
 }

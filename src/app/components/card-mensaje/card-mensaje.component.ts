@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardMensaje, MenuItem } from 'src/app/interfaces';
+import { ConstantesService } from 'src/app/services/constantes.service';
 
 @Component({
   selector: 'app-card-mensaje',
@@ -10,57 +11,16 @@ export class CardMensajeComponent {
   bodyCardEneable: boolean = false;
   mostrarCampoMensaje: boolean = false;
   currentValue: number = 1;
+  cardsMensaje: CardMensaje[] = [];
+  cardsMensajeOtros: CardMensaje[] = [];
+  constructor(private constante: ConstantesService) {
+    this.cardsMensaje = this.constante.cardsMensaje;
+    this.cardsMensajeOtros = this.constante.cardsMensajeOtros;
+  }
+
   changeState() {
     this.bodyCardEneable = !this.bodyCardEneable;
   }
-
-  cardsMensaje: CardMensaje[] = [
-    {
-      nombre: 'Yorlin Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '12 abr',
-    },
-    {
-      nombre: 'Yorlin Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '11 abr',
-    },
-    {
-      nombre: 'Osney Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '19 jul 2022',
-    },
-    {
-      nombre: 'Garcia Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '5 ene 2022',
-    },
-    {
-      nombre: 'Sierra Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '13 dic 2021',
-    },
-  ];
-
-  cardsMensajeOtros: CardMensaje[] = [
-    {
-      nombre: 'Yorlin Garcia',
-      srcImg: './assets/img/perfil.jpeg',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut volutpat quam, a tincidunt diam.',
-      date: '12 abr',
-    },
-  ];
 
   menuItems: MenuItem[] = [
     {
@@ -80,6 +40,48 @@ export class CardMensajeComponent {
     },
     {
       label: 'component.mensaje.config.noDeseados',
+    },
+  ];
+
+  menuItemsCard: MenuItem[] = [
+    {
+      label: 'component.mensaje.card.opciones.moverOtros',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarFavorito',
+    },
+    {
+      label: 'component.mensaje.card.opciones.archivar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.eliminar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarNoLeido',
+    },
+    {
+      label: 'component.mensaje.card.opciones.silenciar',
+    },
+  ];
+
+  menuItemsCardOtros: MenuItem[] = [
+    {
+      label: 'component.mensaje.card.opciones.moverPrioritarios',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarFavorito',
+    },
+    {
+      label: 'component.mensaje.card.opciones.archivar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.eliminar',
+    },
+    {
+      label: 'component.mensaje.card.opciones.marcarNoLeido',
+    },
+    {
+      label: 'component.mensaje.card.opciones.silenciar',
     },
   ];
 
