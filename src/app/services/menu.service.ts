@@ -28,6 +28,11 @@ export class MenuService {
     if (opcion.includes('eliminar')) {
       this.eliminar();
     }
+    if (opcion.includes('moverOtros')) {
+      this.constantes.agregarCardsMensajeOtros(this.indiceArray);
+    } else if (opcion.includes('moverPrioritarios')) {
+      this.constantes.agregarCardsMensaje(this.indiceArray);
+    }
   }
 
   eliminar() {

@@ -59,6 +59,10 @@ export class ConstantesService {
     this.cardsMensaje.splice(index, 1);
   }
 
+  agregarCardsMensajeOtros(index: number) {
+    this.cardsMensajeOtros.unshift(...this.cardsMensaje.splice(index, 1));
+  }
+
   cardsMensajeOtros: CardMensaje[] = [
     {
       nombre: 'Yorlin Garcia',
@@ -75,6 +79,10 @@ export class ConstantesService {
 
   eliminarCardsMensajeOtros(index: number) {
     this.cardsMensajeOtros.splice(index, 1);
+  }
+
+  agregarCardsMensaje(index: number) {
+    this.cardsMensaje.unshift(...this.cardsMensajeOtros.splice(index, 1));
   }
 
   constructor() {}
