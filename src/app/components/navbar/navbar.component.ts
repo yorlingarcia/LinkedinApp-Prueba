@@ -9,6 +9,14 @@ import { ItemsNavBar, MenuItem } from 'src/app/interfaces';
 })
 export class NavbarComponent {
   @Input() itemsNavBar: ItemsNavBar[] = [];
+  //cambio de tamaño horizontal del input
+  statusInput: boolean = true;
+  onFocus() {
+    this.statusInput = false;
+  }
+  onBlur() {
+    this.statusInput = true;
+  }
   menuItems: MenuItem[] = [
     {
       label: 'page.home.navBar.idioma.es',

@@ -1,10 +1,10 @@
 <!-- contenedor principal -->
 <div
   class="row text-center pt-3 bg-white container"
-  style="font-size: 0.8rem; margin: 0 auto"
+  style="font-size: 0.8rem; margin: 0 auto; cursor: pointer"
 >
   <!-- Grupo que compone el boton de linkedin y el buscador -->
-  <div class="col-3 d-flex align-items-center opacity-hover">
+  <div class="col-3 d-flex align-items-center">
     <img
       src="./assets/svg/icons8-linkedin.svg"
       alt=""
@@ -18,7 +18,6 @@
         placeholder="Buscar"
         aria-label="Search"
         style="
-          width: 100%;
           height: 32px;
           background-image: url('./assets/svg/icons8-búsqueda.svg');
           background-position: 5px 5px;
@@ -27,6 +26,9 @@
           padding: 10px 10px 12px 30px;
           background-color: rgba(202, 214, 238, 0.705);
         "
+        [style.width]="statusInput ? '50% ' : '100%'"
+        (focus)="onFocus()"
+        (blur)="onBlur()"
       />
     </form>
   </div>
@@ -126,4 +128,4 @@
   </div>
 </div>
 
-<app-menu #menuComponent [items]="menuItems"></app-menu>
+<app-menu #menuComponent [items]="menuItems" [ancho]="'4rem'"></app-menu>

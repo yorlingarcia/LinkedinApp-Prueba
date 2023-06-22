@@ -10,6 +10,7 @@ import { MenuService } from 'src/app/services/menu.service';
 })
 export class MenuComponent {
   @Input() items!: MenuItem[];
+  @Input() ancho: string = '';
   @ViewChild('menu', { static: true }) menu!: TemplateRef<any>;
   hasChildren(item: MenuItem) {
     return item.children && item.children.length > 0;

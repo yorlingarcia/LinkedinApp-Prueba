@@ -80,9 +80,6 @@ export class CardMensajeComponent {
     {
       label: 'component.mensaje.card.opciones.marcarNoLeido',
     },
-    {
-      label: 'component.mensaje.card.opciones.silenciar',
-    },
   ];
 
   onFocus() {
