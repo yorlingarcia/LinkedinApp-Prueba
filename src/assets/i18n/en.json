@@ -53,5 +53,8 @@
   "component.mensaje.card.opciones.archivar": "Archive",
   "component.mensaje.card.opciones.eliminar": "Eliminate",
   "component.mensaje.card.opciones.marcarNoLeido": "Mark as unread",
-  "component.mensaje.card.opciones.silenciar": "Mute"
+  "component.mensaje.card.opciones.silenciar": "Mute",
+  "component.mensaje.tresPuntos.gestionarConversaciones": "Gestionar conversaciones",
+  "component.mensaje.tresPuntos.configuracionMensajes": "Configuracion de mensajes",
+  "component.mensaje.tresPuntos.mensajeAusencia": "Establecer mensaje de ausencia"
 }

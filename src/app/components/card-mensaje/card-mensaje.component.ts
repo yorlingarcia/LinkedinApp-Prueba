@@ -43,6 +43,18 @@ export class CardMensajeComponent {
     },
   ];
 
+  menuItems2: MenuItem[] = [
+    {
+      label: 'component.mensaje.tresPuntos.gestionarConversaciones',
+    },
+    {
+      label: 'component.mensaje.tresPuntos.configuracionMensajes',
+    },
+    {
+      label: 'component.mensaje.tresPuntos.mensajeAusencia',
+    },
+  ];
+
   menuItemsCard: MenuItem[] = [
     {
       label: 'component.mensaje.card.opciones.moverOtros',

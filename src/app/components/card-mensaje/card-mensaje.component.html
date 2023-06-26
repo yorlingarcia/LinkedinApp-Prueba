@@ -24,7 +24,10 @@
     <!-- contendor de las interacciones -->
     <div class="d-flex flex-row">
       <!-- boton de tres puntos -->
-      <button class="boton-interaccion ms-2">
+      <button
+        class="boton-interaccion ms-2"
+        [cdkMenuTriggerFor]="menuComponent2.menu"
+      >
         <img src="./assets/svg/iconoTresPuntos.svg" alt="" />
       </button>
       <!-- boton de nuevo mensaje -->
@@ -125,3 +128,5 @@
 </div>
 
 <app-menu #menuComponent [items]="menuItems" [ancho]="'8rem'"></app-menu>
+
+<app-menu #menuComponent2 [items]="menuItems2" [ancho]="'14rem'"></app-menu>

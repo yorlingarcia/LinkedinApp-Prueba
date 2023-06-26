@@ -9,3 +9,9 @@ app-navbar {
   top: 0;
   padding: 5px;
 }
+
+@media only screen and (max-width: 992px) {
+  .media-display {
+    display: none;
+  }
+}

@@ -26,3 +26,9 @@
   text-decoration-color: rgb(13, 110, 253);
   color: rgb(13, 110, 253);
 }
+
+@media only screen and (max-width: 994px) {
+  .size-screen {
+    display: none;
+  }
+}
